@@ -3,6 +3,17 @@ import pyrebase
 from http.server import BaseHTTPRequestHandler
 import json
 import requests
+config = {
+  "apiKey": "AIzaSyBRLYfj_x9aMfEHJ69hXH4gDbr5cGv971I",
+  "authDomain": "authchatavatar.firebaseapp.com",
+  "databaseURL": "https://authchatavatar-default-rtdb.europe-west1.firebasedatabase.app",
+  "projectId": "authchatavatar",
+  "databaseURL":"https://authchatavatar-default-rtdb.europe-west1.firebasedatabase.app",
+  "storageBucket": "authchatavatar.appspot.com",
+  "messagingSenderId": "1034506541225",
+  "appId": "1:1034506541225:web:525e0f8ee8a618041f31b8",
+  "measurementId": "G-9QV0TDYHHW"
+}
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         self.wfile.write("Service is work".encode())
