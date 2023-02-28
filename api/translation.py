@@ -5,7 +5,9 @@ import json
 import requests
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
+        
         self.wfile.write("Service is work".encode())
+        
         return
     def do_POST(self):
         content_len = self.rfile.read(int(self.headers.get('Content-Length')))
