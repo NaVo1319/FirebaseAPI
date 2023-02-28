@@ -1,1 +1,1 @@
-pyrebase==5.0.1
+pyrebase5==5.0.1
